@@ -18,18 +18,19 @@ Images: hosted on Chefmade's own DigitalOcean CDN (fra1.digitaloceanspaces.com/c
 
 ## 3. Featured chefs — Container, H2 + Columns ×3 (Image + Text)
 - H2 "Utvalda kockar" (Featured chefs)
-- Nikolaj — img https://fra1.digitaloceanspaces.com/chefspace/static/images/nikolaj_dish.jpg — "Michelinupplevelse – inklusive Noma" / "Modern nordisk" / "Från 1 200 DKK/person" / "Arrangemang för 6–15 personer" (Michelin experience incl. Noma / modern Nordic / from DKK 1,200 pp / events for 6–15)
-- Gabriele — img https://fra1.digitaloceanspaces.com/chefspace/static/images/gabriele_dish.jpg — "Michelinupplevelse – inkl. Geranium" / "Asiatisk fusion" / "Från 1 100 DKK/person" / same
-- Giovanni — img https://fra1.digitaloceanspaces.com/chefspace/static/images/giovanni_dish.webp — "Michelinupplevelse – inkl. Jordnær" / "Modernt italienskt" / "Från 700 DKK/person" / same
-- (Also on chefmade.dk: Niklas – French, from 700; Oliver – modern, from 600; Matheu – international, from 750. Swap in if those cover Skåne.)
+- Nikolaj — img https://fra1.digitaloceanspaces.com/chefspace/static/images/nikolaj_dish.jpg — "Michelinupplevelse – inklusive Noma" / "Modern nordisk" / "Från 1 800 SEK/person" / "Arrangemang för 6–15 personer" (Michelin experience incl. Noma / modern Nordic / from SEK 1,800 pp / events for 6–15)
+- Gabriele — img https://fra1.digitaloceanspaces.com/chefspace/static/images/gabriele_dish.jpg — "Michelinupplevelse – inkl. Geranium" / "Asiatisk fusion" / "Från 1 650 SEK/person" / same
+- Giovanni — img https://fra1.digitaloceanspaces.com/chefspace/static/images/giovanni_dish.webp — "Michelinupplevelse – inkl. Jordnær" / "Modernt italienskt" / "Från 1 050 SEK/person" / same
+- (Also on chefmade.dk: Niklas – French, from 1 050 SEK; Oliver – modern, from 900 SEK; Matheu – international, from 1 150 SEK. Swap in if those cover Skåne.)
 
 ## 4. Prices — Container (beige), H2, Text, Columns ×3
 - H2 "Kockkonst värd sitt pris" (Culinary art worth its price); Text "Våra kockar är mästare i sitt hantverk och förvandlar utvalda råvaror till minnesvärda menyer." (Our chefs are masters of their craft…)
-- Casual: "Det essentiella" / "Instegspriset för att uppleva fine dining" / "Från 650 DKK/gäst" / "3–5 rätter · Fina detaljer" → Button "Förfråga nu" (Inquire now) → `#forfragan`
-- Gourmet: "Signaturen" / "Din privata Michelinstjärnerestaurang" / "Från 1 200 DKK/gäst" / "4–7 rätter · Exklusiva råvaror · Raffinerade förberedelser · Kockar på Michelinnivå" → same button
-- Michelin: "Apex" / "Hela spektrumet av din kocks kök, rätt för rätt." / "Från 2 000 DKK/gäst" / "7+ rätter (avsmakningsmeny) · Kurerad kulinarisk resa · Handplockade toppkockar" → same button
+- Casual: "Det essentiella" / "Instegspriset för att uppleva fine dining" / "Från 1 000 SEK/gäst" / "3–5 rätter · Fina detaljer" → Button "Förfråga nu" (Inquire now) → `#forfragan`
+- Gourmet: "Signaturen" / "Din privata Michelinstjärnerestaurang" / "Från 1 800 SEK/gäst" / "4–7 rätter · Exklusiva råvaror · Raffinerade förberedelser · Kockar på Michelinnivå" → same button
+- Michelin: "Apex" / "Hela spektrumet av din kocks kök, rätt för rätt." / "Från 3 000 SEK/gäst" / "7+ rätter (avsmakningsmeny) · Kurerad kulinarisk resa · Handplockade toppkockar" → same button
 - Small text: "Priserna gäller för grupper på 6–15 personer. Alltid ingår: grundläggande bordsservering, försäkring, utsökta råvaror, skinande rent kök efteråt, hänsyn till intoleranser, personlig omsorg, råd om vin och dryck, certifierade professionella kockar." (Prices for groups of 6–15. Always included: …)
-- Prices stay in DKK. [PRIS I SEK] only if Konrad sets SEK prices himself.
+- Append to small text: "Ungefärliga priser i SEK, omräknade från danska kronor." (Approximate SEK prices, converted from Danish kroner)
+- **Currency conversion:** ECB euro reference rates dated 2026-10-22 (https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml, fetched 2026-10-23 03:30 CEST; the 23 Oct fixing is published ~16:00 CET): EUR/DKK 7.4747, EUR/SEK 11.1120 → 1 DKK = 1.4866 SEK. Rule: DKK × 1.4866, rounded UP to the next 50 SEK. 600→900, 650→1 000, 700→1 050, 750→1 150, 1 100→1 650, 1 200→1 800, 2 000→3 000.
 
 ## 5. Testimonials — Container, H2, Columns ×2 (Text), quotes translated from chefmade.dk
 - H2 "Det här älskar våra gäster" (What our guests love); sub "Trustpilot 5.0 – Utmärkt. Över 100 000 gäster."
@@ -56,7 +57,7 @@ Images: hosted on Chefmade's own DigitalOcean CDN (fra1.digitaloceanspaces.com/c
 | Antal gäster | Number of guests | Number | yes |
 | Ort/område i Skåne | City/area in Skåne | Text (placeholder "t.ex. Malmö, Lund, Helsingborg") | yes |
 | Tillfälle | Occasion | Select: Middagsbjudning, Företag, Födelsedag, Bröllop, Julfest, Annat | yes |
-| Budget per person (valfritt) | Budget pp, optional | Text | no |
+| Budget per person (valfritt) | Budget pp, optional | Text (placeholder "t.ex. 1 800 SEK") | no |
 | Namn | Name | Name | yes |
 | E-post | Email | Email | yes |
 | Telefon | Phone | Text (Carrd has no tel type; or Phone if available) | no |
@@ -68,4 +69,59 @@ Images: hosted on Chefmade's own DigitalOcean CDN (fra1.digitaloceanspaces.com/c
 ## Google Ads conversion
 - Preferred: On Success → Redirect to `#tack` section / separate thank-you page; in Google Ads create a "Submit lead form" conversion triggered on page URL containing `#tack` (or use GTM). Carrd Pro: paste the gtag base tag in Settings → Head, and put the event snippet `gtag('event','conversion',{send_to:'AW-XXXX/XXXX'})` in an Embed (Code, hidden) inside the thank-you section/page.
 - If using "Message" instead of redirect, there's no URL change → conversion can't fire by URL; use redirect.
-- Respect consent: Swedish/EU traffic needs a cookie-consent banner (Consent Mode v2) before Ads tags fire.
+- Consent: see section below.
+
+## Cookie consent (vanilla-cookieconsent v3.1.0, MIT, no account) + Google Consent Mode v2
+Why: free/open-source, no pageview/domain limits, Swedish via own texts, documented Google Consent Mode guide (cookieconsent.orestbida.com/advanced/google-consent-mode.html), plain JS → works in Carrd embeds.
+Comparison (official pages fetched 2026-10-23):
+| | Free limits | Consent Mode v2 | Swedish | Carrd |
+|---|---|---|---|---|
+| vanilla-cookieconsent (orestbida) | Free, MIT, no account, no limits (self/CDN hosted) | Yes, via gtag consent updates in callbacks (official guide) | Yes, custom translation (texts below) | Yes, head/body embeds |
+| Cookiebot Free (cookiebot.com/en/pricing) | 1 domain, ≤50 subpages, 1 language, consent expiry ≤1 month, no custom branding | Yes ("Google Consent Mode support" on Free) | 1 language on Free (can be Swedish) | Yes, script in head; needs account |
+| CookieYes Free (cookieyes.com/pricing) | 1 domain, 5,000 pageviews/month, 100 pages/scan | Yes (Free) | No multilingual/auto-translate on Free | Yes, script in head; needs account |
+
+Carrd (Pro, needs Embed support) steps:
+1. **Settings → Head (custom code)** — paste in this order, FIRST:
+```html
+<meta name="robots" content="noindex">
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
+</script>
+<!-- THEN the Google Ads tag (replace AW-XXXXXXXXX): -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>gtag('js',new Date());gtag('config','AW-XXXXXXXXX');</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+<style>#cc-main{--cc-font-family:Poppins,sans-serif;--cc-btn-primary-bg:#006838;--cc-btn-primary-border-color:#006838;--cc-btn-primary-hover-bg:#004d2a;--cc-btn-primary-hover-border-color:#004d2a;--cc-btn-secondary-bg:#f6f5f2;--cc-toggle-on-bg:#006838;--cc-btn-border-radius:999px}</style>
+```
+2. **Add element → Embed**, Type: *Code*, Style: *Hidden*, Location: *Body end* — paste:
+```html
+<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js"></script>
+<script>
+// vanilla-cookieconsent v3.1.0 (MIT, orestbida) + Google Consent Mode v2 updates
+function updateGcm(){
+  const ads = CookieConsent.acceptedCategory('ads'), an = CookieConsent.acceptedCategory('analytics');
+  gtag('consent','update',{ad_storage:ads?'granted':'denied',ad_user_data:ads?'granted':'denied',ad_personalization:ads?'granted':'denied',analytics_storage:an?'granted':'denied'});
+}
+CookieConsent.run({
+  guiOptions:{consentModal:{layout:'box',position:'bottom left'},preferencesModal:{layout:'box'}},
+  categories:{necessary:{enabled:true,readOnly:true},analytics:{},ads:{}},
+  onConsent:updateGcm, onChange:updateGcm,
+  language:{default:'sv',translations:{sv:{
+    consentModal:{title:'Vi använder cookies',
+      description:'Vi använder nödvändiga cookies för att webbplatsen ska fungera. Med ditt samtycke använder vi även cookies för statistik och för att mäta våra annonser (Google Ads). Du kan när som helst ändra ditt val.',
+      acceptAllBtn:'Acceptera alla',acceptNecessaryBtn:'Avvisa alla',showPreferencesBtn:'Inställningar'},
+    preferencesModal:{title:'Cookieinställningar',acceptAllBtn:'Acceptera alla',acceptNecessaryBtn:'Avvisa alla',savePreferencesBtn:'Spara val',closeIconLabel:'Stäng',
+      sections:[
+        {title:'Nödvändiga cookies',description:'Krävs för att webbplatsen ska fungera och kan inte stängas av.',linkedCategory:'necessary'},
+        {title:'Statistik',description:'Hjälper oss att förstå hur besökare använder webbplatsen.',linkedCategory:'analytics'},
+        {title:'Marknadsföring',description:'Används för att mäta och förbättra våra annonser, t.ex. Google Ads.',linkedCategory:'ads'}
+      ]}
+  }}}
+});
+</script>
+```
+3. Footer: add a Text/Embed link `<a href="#" data-cc="show-preferencesModal">Cookieinställningar</a>` (Cookie settings) so visitors can change their choice.
+4. Publish, open in a private window: banner shows; "Avvisa alla" → consent update all denied; "Acceptera alla" → granted (check in Google Tag Assistant). Note: the banner is hidden for automated bots/headless browsers by design (hideFromBots).
+Swedish banner texts: "Vi använder cookies" (We use cookies) / buttons "Acceptera alla" (Accept all), "Avvisa alla" (Reject all), "Inställningar" (Settings), "Spara val" (Save choices); categories "Nödvändiga cookies", "Statistik", "Marknadsföring".
